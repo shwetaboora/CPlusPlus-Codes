@@ -36,6 +36,7 @@ bool numericCompare(pair<string, string> s1, pair<string, string> s2)
 
     return convertToInt(key1) < convertToInt(key2);
 }
+
 bool lexicoCompare(pair<string, string> s1, pair<string, string> s2)
 {
     string key1, key2;
@@ -66,6 +67,7 @@ int main()
     int key;
     string reversal, ordering;
     cin >> key >> reversal >> ordering;
+
     // extracting key once and storing it with its string
     pair<string, string> strPair[100];
     for (int i = 0; i < n; i++)
