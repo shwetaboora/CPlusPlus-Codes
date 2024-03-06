@@ -12,14 +12,21 @@ int main()
     bool weatherRainy = true;
     double pi = 23.345243252;
     char ch = 'A';
-
+    cout << "Data Types" << endl;
+    cout << "Int = " << x << endl;
+    cout << "Float = " << y << endl;
+    cout << "Bool = " << weatherRainy << endl;
+    cout << "Double = " << pi << endl;
+    cout << "Char = " << ch << endl;
     // how much memory each is going to occupy
     // 1 byte = 8 bits
-    cout << "int " << sizeof(x) << endl;
-    cout << "float " << sizeof(y) << endl;
-    cout << "bool " << sizeof(weatherRainy) << endl;
-    cout << "double " << sizeof(pi) << endl;
-    cout << "char " << sizeof(ch) << endl;
+    cout << endl;
+    cout << "Sizeof Datatypes" << endl;
+    cout << "int = " << sizeof(x) << endl;
+    cout << "float = " << sizeof(y) << endl;
+    cout << "bool = " << sizeof(weatherRainy) << endl;
+    cout << "double = " << sizeof(pi) << endl;
+    cout << "char = " << sizeof(ch) << endl;
 
     // range of datatypes
     // cant expand or contract the memory at any time
@@ -44,6 +51,23 @@ int main()
     // ASCII table for letter to integer for eg - A = 65
 
     // 1 byte is minimum allocation size
+    cout << endl;
+    cout << "TypeCasting" << endl;
+    int a = 'a';
+    cout << "a = " << a << endl;
 
+    char ab = 98;
+    cout << "98 = " << ab << endl;
+
+    char bigNotoChar = 123456;
+    cout << "typecasting a big no to char = " << bigNotoChar << endl;
+
+    float f = 5.466;
+    int g = int(f);
+    cout << "typecasting float to integer = " << g << endl;
+
+    cout << endl;
+    unsigned int b = -112;
+    cout << "printing unsigned int as negative no. = " << b << endl;
     return 0;
 }
