@@ -3,6 +3,12 @@ using namespace std;
 
 int main()
 {
+    // 1
+    // 11
+    // 111
+    // 1001
+    // 11111
+    // 100001
     int n;
     cin >> n;
 
