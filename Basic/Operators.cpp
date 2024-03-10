@@ -35,9 +35,9 @@ int main()
     cout << endl;
     cout << "Bitwise operators" << endl;
     cout << "bitwise AND (&) a&b = " << (a & b) << endl;
-    cout << "bitwise AND (|) a|b = " << (a | b) << endl;
-    cout << "bitwise AND (^) a^b = " << (a ^ b) << endl;
-    cout << "bitwise AND (~) ~b = " << (~b) << endl;
+    cout << "bitwise OR (|) a|b = " << (a | b) << endl;
+    cout << "bitwise XOR (^) a^b = " << (a ^ b) << endl;
+    cout << "bitwise NOT (~) ~b = " << (~b) << endl;
 
     // 3. shift operators
     // shift operators are of 2 types
@@ -45,8 +45,8 @@ int main()
     // b. right shift (>>)
     cout << endl;
     cout << "Shift operators" << endl;
-    cout << "left shift (a<<b) = " << (a << b) << endl;
-    cout << "right shift (a>>b) = " << (a >> b) << endl;
+    cout << "left shift (a<<b) = " << (5 << 2) << endl;
+    cout << "right shift (a>>b) = " << (3 >> 1) << endl;
 
     // 4. Unary operator
     // they operate on a single operand
