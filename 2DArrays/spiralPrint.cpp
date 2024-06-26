@@ -23,7 +23,7 @@ void spiralPrint(int a[][100], int m, int n)
         }
         endCol--;
         // bottom row
-        if (endRow > startRow)
+        if (endRow >= startRow)
         {
 
             for (int i = endCol; i >= startCol; i--)
@@ -34,10 +34,10 @@ void spiralPrint(int a[][100], int m, int n)
             endRow--;
         }
         // startCol
-        if (endCol > startCol)
+        if (endCol >= startCol)
         {
 
-            for (int i = endCol; i >= startCol; i--)
+            for (int i = endRow; i >= startRow; i--)
             {
                 cout << a[i][startCol] << " ";
             }
