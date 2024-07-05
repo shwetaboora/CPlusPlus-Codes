@@ -1,26 +1,26 @@
 #include <iostream>
 using namespace std;
 
-// Naive appraoch O(N)
-bool isPrime(int n)
-{
-    if (n == 1)
-    {
-        return false;
-    }
-    if (n == 2)
-    {
-        return true;
-    }
-    for (int i = 2; i < n; i++)
-    {
-        if (n % i == 0)
-        {
-            return false;
-        }
-        return true;
-    }
-}
+// // Naive appraoch O(N)
+// bool isPrime(int n)
+// {
+//     if (n == 1)
+//     {
+//         return false;
+//     }
+//     if (n == 2)
+//     {
+//         return true;
+//     }
+//     for (int i = 2; i < n; i++)
+//     {
+//         if (n % i == 0)
+//         {
+//             return false;
+//         }
+//         return true;
+//     }
+// }
 
 // Sieve Approach - generate a array containing prime nos.
 void primeSieve(int *p)

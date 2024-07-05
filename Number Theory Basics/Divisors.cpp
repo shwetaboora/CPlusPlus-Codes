@@ -35,30 +35,32 @@ vector<int> primeSieve(int *p, int n)
     return primes;
 }
 
-vector<int> factorize(int m, vector<int> &primes)
+int noOfDivisors(int m, vector<int> &primes)
 {
-    vector<int> factors;
-    factors.clear();
+
     int i = 0;
     int p = primes[0];
+    int ans = 1;
     while (p * p <= m)
     {
         if (m % p == 0)
         {
-            factors.push_back(p);
+            int cnt = 0; // what is the power
             while (m % p == 0)
             {
+                cnt++;
                 m = m / p;
             }
+            ans = ans * (cnt + 1);
         }
         i++;
         p = primes[i];
     }
     if (m != 1)
     {
-        factors.push_back(m);
+        ans = ans * 2;
     }
-    return factors;
+    return ans;
 }
 
 int main()
@@ -78,11 +80,8 @@ int main()
     {
         int no;
         cin >> no;
-        vector<int> factors = factorize(no, primes);
-        for (auto f : factors)
-        {
-            cout << f << " " << endl;
-        }
+        int divisors = noOfDivisors(no, primes);
+        cout << divisors << endl;
     }
 
     return 0;
