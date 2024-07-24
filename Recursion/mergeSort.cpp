@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+// time comp O(NlogN) space O(N)
 void merge(int arr[], int s, int e)
 {
     int mid = (s + e) / 2;

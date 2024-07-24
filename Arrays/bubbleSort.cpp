@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+
+// it is in place sorting algorithm
+// O(N^2)
 void BubbleSort(int a[], int n)
 {
     // n-1 large elements to the large elements towards the end

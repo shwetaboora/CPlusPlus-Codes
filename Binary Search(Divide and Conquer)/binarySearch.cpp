@@ -31,6 +31,8 @@ int main()
     // it is also called divide and conquer technique
     // efficient than linear search
 
+    // O(logN)
+
     int n, key;
     cout << "enter no of elements you want in array: ";
     cin >> n;

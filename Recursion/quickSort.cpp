@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-
+// time - O(NlogN)Avg case  worst case - O(N^2)
+// space - O(logN)
 int partition(int arr[], int s, int e)
 {
     // inplace cant take extra array

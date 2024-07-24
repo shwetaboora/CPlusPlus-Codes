@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// O(2^N) exponential time complexity
+
 int fib(int n)
 {
     // base case
