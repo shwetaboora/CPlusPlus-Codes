@@ -1,4 +1,18 @@
+// some special functions that c++ classes give you when you create a class object
+// 4 different special functions that are always present inside a class
+// 1. constructor
+//      - responsible for creating an object
+//      - Gets called automatically and only once.
+//      - same name as class name
+// 2. copy constructor
+//      - make a copy of given constructor
+//      - also exists by default
+
+// 3. copy assignment operator
+// 4. destructor
+
 #include <iostream>
+#include <cstring>
 using namespace std;
 
 // Access Specifiers - public, private and (protected) not covered
@@ -13,6 +27,27 @@ private:
 public:
     int modelNo;
     char name[20];
+
+    // Default constructor
+    // Car() {}
+
+    // constructor
+    Car()
+    {
+        cout << "inside car constructor" << endl;
+    }
+    // parameterized constructor
+    Car(float p, int m, char *n)
+    {
+        price = p;
+        modelNo = m;
+        strcpy(name, n);
+    }
+    // constructor overlaoding - when we have different constructor of same name
+    Car(float p)
+    {
+        price = p;
+    }
 
     void print()
     {
@@ -43,7 +78,9 @@ public:
 
 int main()
 {
-    Car c, d, r;
+    Car c; // make a call to the constructor function present inside the class
+    Car d(222, 333, "AUDI");
+    d.print();
     // c.price = 500;
     c.modelNo = 112;
     c.name[0] = 'B';
