@@ -1,4 +1,5 @@
 #include <iostream>
+#include <list>
 using namespace std;
 
 int main()
@@ -24,7 +25,13 @@ int main()
     // print the linked lists
     for (int i = 0; i < n; i++)
     {
-        /* code */
+        // print every linked list
+        cout << "linked list " << i << "->";
+        for (auto xp : l[i])
+        {
+            cout << "(" << xp.first << "," << xp.second << "),";
+        }
+        cout << endl;
     }
 
     return 0;
