@@ -6,3 +6,6 @@
 // for example- pile of plates
 // we can implement stack using array or linked list or vector
 // insertion(),pop(),top()(for viewing top most element), isempty(),isfull()
+
+// call stack is also like a - implicit stack
+// stack is a - explicit (object)

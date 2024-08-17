@@ -3,13 +3,15 @@
 using namespace std;
 // implementing stack using vector
 
+template <typename T>
 class Stack // stack of integers
 {
 private:
-    vector<int> v;
+    vector<T> v;
+    vector<U> v2;
 
 public:
-    void push(int data)
+    void push(T data)
     {
         v.push_back(data);
     }
@@ -25,7 +27,7 @@ public:
         }
     }
 
-    int top()
+    T top()
     {
         return v[v.size() - 1];
     }
@@ -33,10 +35,11 @@ public:
 
 int main()
 {
-    Stack s;
-    for (int i = 1; i <= 5; i++)
+    // Stack<T type> s;
+    Stack<char, int> s;
+    for (int i = 65; i <= 70; i++)
     {
-        s.push(i * i);
+        s.push(i);
     }
     // try to print the content of the stack by poping each element
     while (!s.empty())
