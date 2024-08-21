@@ -3,7 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-//  a person wants to book a cab. there are n no of cabs which are available around you. give cordinates of the cabs x1,y1 x2,y2 etc
+// a person wants to book a cab. there are n no of cabs which are available around you. give cordinates of the cabs x1,y1 x2,y2 etc
 // we are standing at origin
 // we want to know about distances of the cab from you in the sorted order
 
